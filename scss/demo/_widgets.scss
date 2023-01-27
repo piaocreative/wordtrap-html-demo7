@@ -20,10 +20,10 @@
 	position: relative;
 
 	.widget-title {
-		color: #faf7fa;		
+		color: #faf7fa;
 		font-size: 0.875rem;
 		margin-bottom: $spacer * 1.375;
-	}	
+	}
 
 	// Widget - Social
 	&.widget-social {
@@ -36,24 +36,24 @@
 				&:last-child {
 					padding-right: 0;
 				}
-		
+
 				a {
-					background-color: #303135;					
+					background-color: #303135;
 					color: $white;
 					display: inline-block;
 					line-height: 1.8125rem;
 					width: 1.8125rem;
-					height: 1.8125rem;		
+					height: 1.8125rem;
 					vertical-align: middle;
 					text-align: center;
 					@include border-radius(50%);
 					@include transition(all 0.3s ease-in-out);
-		
+
 					&:hover {
 						background-color: $theme-color;
 						color: $white;
 					}
-		
+
 					i {
 						vertical-align: top;
 						line-height: 1.8125rem;
@@ -72,7 +72,7 @@
 				a {
 					color: #61605f;
 					font-size: 1rem;
-					line-height: 1.875rem;				
+					line-height: 1.875rem;
 
 					&:hover {
 						color: $theme-color;
@@ -174,14 +174,14 @@
 					padding: 0 $spacer * 1.25;
 				}
 
-				.product-price {					
+				.product-price {
 					margin-bottom: $spacer * 0.625;
 				}
 
 				.product-title {
 					a {
-						color: $white;																		
-					}					
+						color: $white;
+					}
 				}
 			}
 		}
@@ -196,14 +196,14 @@
 				.post-thumbnail {
 					padding-right: 1.875rem;
 				}
-	
+
 				.entry-title {
 					a {
 						font-size: 1.1875rem;
 						line-height: 1.875rem;
 					}
 				}
-			}			
+			}
 		}
 	}
 }

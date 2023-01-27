@@ -54,7 +54,7 @@ select {
 	padding: $input-btn-padding-y 3.125rem $input-btn-padding-y $input-btn-padding-x;
 	-moz-appearance: none;
 	-webkit-appearance: none;
-	appearance: none;	
+	appearance: none;
 }
 
 
@@ -92,7 +92,7 @@ input[type=radio],
 			height: 8px;
 			display: block;
 			position: absolute;
-		
+
 			@include rotate(45deg);
 		}
 	}
@@ -106,7 +106,7 @@ input[type=radio],
 
 // QTY
 .quantity {
-	background-color: $light;	
+	background-color: $light;
 	width: 11.875rem;
 	align-items: center;
 	margin-right: 0.75rem;
@@ -118,7 +118,7 @@ input[type=radio],
 		box-shadow: none;
 		padding: 0.75rem 1.25rem;
 	}
-	
+
 	.btn {
 		padding: 0.75rem 1.25rem;
 	}

@@ -17,7 +17,7 @@
 
 
 #header {
-	position: relative;		
+	position: relative;
 
 	.header-content {
 		padding-left: $spacer * 4.375;
@@ -31,8 +31,8 @@
 		z-index: 199;
 
 		@include media-breakpoint-up(xl) {
-			background-color: transparent;			
-		}			
+			background-color: transparent;
+		}
 
 		& + #content {
 			@include media-breakpoint-up(xl) {
@@ -71,7 +71,7 @@
 
 		@include border-radius(2.875rem);
 
-		@include media-breakpoint-up(xl) {			
+		@include media-breakpoint-up(xl) {
 			line-height: 1;
 			margin-bottom: 1rem;
 		}
@@ -95,20 +95,20 @@
 			background-color: transparent;
 			padding: 0;
 			overflow: hidden;
-	
+
 			@include media-breakpoint-up(xxl) {
 				background-color: $white;
 				display: block;
 				min-width: 14rem;
 				top: -1000px;
 				opacity: 0;
-	
+
 				@include box-shadow(0 8px 51px 21px rgba(169, 169, 169, 0.11));
 				@include transition(transform .2s ease-out);
 				@include translate3d(0, -20px, 0);
 				@include border-radius(1rem);
 			}
-			
+
 			.nav-item {
 				margin: 0;
 
@@ -118,7 +118,7 @@
 					margin-bottom: 0;
 					// padding: 0.75rem 1.125rem;
 				}
-				
+
 				&.current,
 				&:hover {
 					background-color: rgba($theme-color, 0.7);
@@ -129,9 +129,9 @@
 		@include media-breakpoint-up(xxl) {
 			&.dropdown:hover {
 				.dropdown-menu {
-					top: auto;				
+					top: auto;
 					opacity: 1;
-	
+
 					@include translate3d(0, 0, 0);
 				}
 			}
@@ -144,7 +144,7 @@
 	Mega Menu
 -----------------------------------------------------------------*/
 
-// Please ignore mega menu now 
+// Please ignore mega menu now
 
 
 /* ----------------------------------------------------------------
@@ -158,14 +158,14 @@
 	@include media-breakpoint-up(xl) {
 		padding-top: 0;
 	}
-	
+
 	.nav-item:not(:first-child) {
 		margin-left: $spacer * 1.25;
 	}
 
 	.nav-link {
-		color: $top-btn-font-color;	
-		font-size: $top-btn-font-size;	
+		color: $top-btn-font-color;
+		font-size: $top-btn-font-size;
 		line-height: 1;
 		padding: 0;
 
@@ -181,19 +181,19 @@
 -----------------------------------------------------------------*/
 
 #top-links {
-	.nav-item {			
+	.nav-item {
 		@include media-breakpoint-up(xl) {
-			padding-right: $spacer * 1.875;		
+			padding-right: $spacer * 1.875;
 		}
 	}
 
 	a.nav-link {
 		color: $topbar-color;
 		display: block;
-		font-size: 0.75rem;	
-		
+		font-size: 0.75rem;
+
 		@include media-breakpoint-up(xl) {
-			padding: 0;		
+			padding: 0;
 		}
 
 		&:hover {
@@ -212,7 +212,7 @@
 		border: 0;
 		top: 1.5rem;
 		left: 0;
-		width: 100%;		
+		width: 100%;
 		margin: 0;
 		border-top: 3px solid $link-hover-color;
 		@include border-radius(0);
@@ -226,7 +226,7 @@
 			color: $headings-color;
 			height: 2.25rem;
 			line-height: 2.25rem;
-			font-size: 0.75rem;				
+			font-size: 0.75rem;
 			padding: 0 $spacer * 0.75;
 
 			&:hover {
@@ -255,7 +255,7 @@
 
 	.phone-number {
 		margin-right: $spacer * 2.875;
-		
+
 		a {
 			color: $topbar-color;
 			margin-left: $spacer * 1.75;
@@ -291,7 +291,7 @@
 			display: inline-block;
 			line-height: 1.8125rem;
 			width: 1.8125rem;
-			height: 1.8125rem;		
+			height: 1.8125rem;
 			vertical-align: middle;
 			text-align: center;
 

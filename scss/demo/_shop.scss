@@ -21,13 +21,13 @@
 -----------------------------------------------------------------*/
 
 .category {
-	position: relative;		
+	position: relative;
 	@include transition(all 0.5s ease-in-out);
 
 	.category-desc {
 		position: absolute;
 		left: 0;
-		bottom: 0;		
+		bottom: 0;
 		width: 100%;
 		padding: $spacer * 3;
 		z-index: 1;
@@ -57,7 +57,7 @@
 	}
 
 	.product-details {
-		padding: $spacer * 1.25 0;		
+		padding: $spacer * 1.25 0;
 	}
 
 	.product-price {
@@ -97,7 +97,7 @@
 		right: 0;
 		bottom: 0;
 		padding: $spacer * 0.875 $spacer * 0.375;
-		opacity: 0;					
+		opacity: 0;
 		z-index: 2;
 
 		@include transition(all 0.3s ease-in-out);
@@ -109,7 +109,7 @@
 		color: $headings-color;
 		padding: 0 $spacer * 0.625;
 
-		@include transition(all 0.3s ease-in-out);		
+		@include transition(all 0.3s ease-in-out);
 
 		&:hover {
 			color: $red;
@@ -188,7 +188,7 @@
 		&.ads-content-left {
 			left: 4.375rem;
 		}
-	
+
 		&.ads-content-right {
 			right: 4.375rem;
 		}
@@ -242,7 +242,7 @@
 			}
 		}
 	}
-	
+
 	.product-filter-size {
 		ul li {
 			display: inline-block;
@@ -275,7 +275,7 @@
 					&::after {
 						display: none;
 					}
-				}				
+				}
 			}
 		}
 	}
@@ -290,7 +290,7 @@
 	#comments {
 		.reviews-title {
 			font-size: 1.125rem;
-			
+
 			span {
 				color: $body-color;
 				font-family: $body-font;
@@ -369,7 +369,7 @@
 -----------------------------------------------------------------*/
 
 .shop-table {
-	td, th {			
+	td, th {
 		padding: 1rem;
 	}
 

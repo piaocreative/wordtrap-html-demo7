@@ -20,13 +20,13 @@
 	position: relative;
 
 	ul {
-		margin: 0;		
+		margin: 0;
 		display: flex;
-		
 
-		li {			
-			position: relative;	
-			padding-right: $spacer * 1.875;		
+
+		li {
+			position: relative;
+			padding-right: $spacer * 1.875;
 		}
 	}
 
@@ -73,7 +73,7 @@
 		ul {
 			li {
 				float: none;
-				height: 2.25rem;	
+				height: 2.25rem;
 				padding-right: 0;
 			}
 
@@ -81,7 +81,7 @@
 				color: $headings-color;
 				height: 2.25rem;
 				line-height: 2.25rem;
-				font-size: 0.75rem;				
+				font-size: 0.75rem;
 				padding: 0 $spacer * 0.75;
 
 				&:hover {

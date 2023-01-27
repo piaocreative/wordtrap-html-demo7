@@ -27,13 +27,13 @@
 
 #page-title {
 	position: relative;
-	
+
 	.title {
 		color: $white;
 		display: block;
 		font-size: 4.375rem;
 		font-family: $headings-font;
-		font-weight: 900;		
+		font-weight: 900;
 		line-height: 1;
 		margin-bottom: $spacer * 1.875;
 	}
@@ -96,7 +96,7 @@
 	.shipping-banner {
 		position: absolute;
 		left: 4.375rem;
-		top: 5.625rem;	
+		top: 5.625rem;
 	}
 }
 
@@ -121,11 +121,11 @@
 	}
 
 	.member-role {
-		font-size: 0.75rem;		
+		font-size: 0.75rem;
 	}
 
 	.member-intro {
-		margin-top: 1.5rem;		
+		margin-top: 1.5rem;
 
 		.read-more {
 			color: $primary;
@@ -177,7 +177,7 @@
 -----------------------------------------------------------------*/
 
 #single-member-page {
-	.team-member {		
+	.team-member {
 		padding: 0;
 
 		.member-details {
@@ -191,7 +191,7 @@
 			position: relative;
 
 			&::before {
-				content: "";				
+				content: "";
 				background-image: escape-svg($checker-icon);
 				background-repeat: no-repeat;
 				background-size: 100%;
@@ -244,7 +244,7 @@
 			.post-thumbnail {
 				@include border-radius(0.5rem);
 			}
-		
+
 			.post-content {
 				display: block;
 				padding: 0.9375rem 0;
@@ -267,7 +267,7 @@
 				}
 			}
 		}
-	}	
+	}
 }
 
 
@@ -302,10 +302,10 @@
 			top: 1.25rem;
 			z-index: 1;
 
-			li {				
+			li {
 				border-left: 5px solid transparent;
 				margin-bottom: 0.625rem;
-				padding-left: 0.75rem;				
+				padding-left: 0.75rem;
 
 				> a {
 					background-color: $white;
@@ -313,7 +313,7 @@
 					width: 5.625rem;
 					height: 5.625rem;
 					overflow: hidden;
-				}				
+				}
 
 				&:hover,
 				&.active {
@@ -355,8 +355,8 @@
 			margin-top: 1.5rem;
 			margin-bottom: 1.5rem;
 		}
-		
-		.product-meta {			
+
+		.product-meta {
 			span {
 				display: block;
 
@@ -401,24 +401,24 @@
 					border-bottom: none;
 				}
 			}
-	
+
 			.cart-item {
 				.product-thumbnail {
 					width: 8.25rem;
-	
+
 					img {
 						width: 6.25rem;
 						height: auto;
 						min-width: 6.25rem;
 					}
 				}
-	
+
 				.product-name {
 					color: $secondary;
 					font-size: 1rem;
 					font-weight: 600;
 				}
-	
+
 				.product-wishlist,
 				.product-delete {
 					color: $body-color;
@@ -429,7 +429,7 @@
 						color: $primary;
 					}
 				}
-	
+
 				.product-subtotal {
 					color: $headings-color;
 					font-size: 1.25rem;
@@ -447,12 +447,12 @@
 				}
 			}
 		}
-	}	
+	}
 
 	.cart-totals {
 		@include media-breakpoint-up(lg) {
 			padding: 0 2.375rem;
-		}		
+		}
 
 		.shop-table {
 			font-size: 0.75rem;
@@ -464,7 +464,7 @@
 				padding: 1rem 0;
 				vertical-align: middle;
 			}
-			
+
 			th {
 				font-weight: 600;
 				text-transform: uppercase;
@@ -475,7 +475,7 @@
 			}
 
 			.order-total {
-				td {					
+				td {
 					font-size: 1.25rem;
 					font-weight: 600;
 				}
@@ -537,7 +537,7 @@
 					font-weight: 600;
 					text-transform: uppercase;
 				}
-			}	
+			}
 
 			tfoot {
 				.cart-subtotal,
@@ -559,23 +559,23 @@
 					}
 				}
 			}
-			
+
 			.shipping {
 				td {
 					text-align: left;
-	
+
 					p {
 						font-weight: 600;
 					}
 				}
-	
+
 				.shipping-destination {
 					input {
 						background-color: $light;
 					}
 				}
 			}
-		}	
+		}
 
 		.checkout-payment {
 			p {
