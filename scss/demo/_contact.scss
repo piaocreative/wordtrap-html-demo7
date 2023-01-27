@@ -1,0 +1,23 @@
+/* ----------------------------------------------------------------
+
+	Contact.scss
+
+-----------------------------------------------------------------*/
+
+
+#contact-info {
+	padding: $spacer * 10.5 $spacer * 4.375;
+
+	@include media-breakpoint-up(xl) {
+		padding: $spacer * 10.5 $spacer * 14;
+	}
+
+	h5 {
+		font-size: $spacer * 0.875;
+		font-weight: 600;
+	}
+}
+
+#contact-sidebar {
+	padding: $spacer * 4.375;
+}

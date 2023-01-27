@@ -1,0 +1,34 @@
+/* ----------------------------------------------------------------
+
+	404.scss
+
+-----------------------------------------------------------------*/
+
+
+#error-404 {
+	padding: $spacer * 10.5 $spacer * 5.625;
+}
+
+#error-sidebar {
+	padding: $spacer * 5.625;
+
+	h5 {
+		font-size: 0.875rem;
+	}
+
+	ul {
+		li {
+			border-bottom: 1px dotted #d1bfbb;
+
+			a {
+				color: $white;
+				display: inline-block;
+				font-family: $body-font;
+				font-size: 1rem;
+				font-weight: 300;
+				line-height: 1;
+				padding: $spacer $spacer * 0.25;
+			}
+		}
+	}
+}

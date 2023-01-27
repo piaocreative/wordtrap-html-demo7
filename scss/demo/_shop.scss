@@ -1,0 +1,405 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Category
+-----------------------------------------------------------------*/
+
+.category {
+	position: relative;		
+	@include transition(all 0.5s ease-in-out);
+
+	.category-desc {
+		position: absolute;
+		left: 0;
+		bottom: 0;		
+		width: 100%;
+		padding: $spacer * 3;
+		z-index: 1;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Product
+-----------------------------------------------------------------*/
+
+.product {
+	margin-bottom: $spacer * 1.875;
+	position: relative;
+
+	.product-image {
+		position: relative;
+
+		> a:nth-of-type(2) {
+			opacity: 0;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			@include transition(all 0.3s ease-in-out);
+		}
+	}
+
+	.product-details {
+		padding: $spacer * 1.25 0;		
+	}
+
+	.product-price {
+		color: #979797;
+		font-family: $body-font;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1;
+	}
+
+	.product-title {
+		color: $headings-color;
+		font-family: $body-font;
+		font-size: 1.1875rem;
+		font-weight: 300;
+		line-height: 1.875rem;
+		margin-bottom: $spacer * 0.5;
+	}
+
+	.product-rating {
+		line-height: 1;
+		margin-bottom: $spacer * 0.5;
+
+		i {
+			color: $yellow;
+			font-size: 0.625rem;
+
+			&.empty {
+				color: rgba($yellow, 0.5);
+			}
+		}
+	}
+
+	.product-btns {
+		background-color: $white;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		padding: $spacer * 0.875 $spacer * 0.375;
+		opacity: 0;					
+		z-index: 2;
+
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	.add-to-cart,
+	.add-to-wishlist {
+		display: inline-block;
+		color: $headings-color;
+		padding: 0 $spacer * 0.625;
+
+		@include transition(all 0.3s ease-in-out);		
+
+		&:hover {
+			color: $red;
+		}
+
+		i {
+			font-size: 1.25rem;
+			line-height: 1;
+		}
+	}
+
+
+	.onhot,
+	.onsale {
+		font-family: $headings-font;
+		font-size: 0.875rem;
+		font-weight: 800;
+		line-height: 1;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		padding: $spacer * 0.5 $spacer * 0.625;
+		position: absolute;
+		left: 1rem;
+		top: 1rem;
+		z-index: 2;
+		@include border-radius(0.875rem);
+	}
+
+	.onhot {
+		background-color: $red;
+		color: $white;
+	}
+
+	.onsale {
+		background-color: $yellow;
+		color: $black;
+	}
+
+	&:hover {
+		.product-btns {
+			opacity: 1;
+		}
+
+		.product-image {
+			> a:nth-of-type(2) {
+				z-index: 1;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+#new-products {
+	.product {
+		padding: 0 $spacer * 2;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Ads
+-----------------------------------------------------------------*/
+
+.ads {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 36rem;
+	width: 100%;
+	position: relative;
+
+	.ads-content {
+		position: absolute;
+		top: 11rem;
+
+		&.ads-content-left {
+			left: 4.375rem;
+		}
+	
+		&.ads-content-right {
+			right: 4.375rem;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Product Filters
+-----------------------------------------------------------------*/
+
+.product-filters {
+	.filter-title {
+		color: $headings-color;
+		font-size: .875rem;
+		font-family: $body-font;
+		font-weight: 600;
+		line-height: 1;
+		margin-bottom: 0.75rem;
+	}
+
+	ul li ul {
+		padding-left: 2.25rem;
+	}
+
+	.product-filter-color {
+		ul li {
+			display: inline-block;
+			margin-right: 5px;
+
+			.filter-color {
+				width: 1.875rem;
+				height: 1.875rem;
+				margin: 0;
+				border: none;
+
+				&:checked::after {
+					top: 8px;
+					left: 12px;
+					width: 6px;
+					height: 10px;
+				}
+
+				&#color_ffffff {
+					border: 1px solid #dcdcdc;
+
+					&:checked::after {
+						border-color: #373737;
+					}
+				}
+			}
+		}
+	}
+	
+	.product-filter-size {
+		ul li {
+			display: inline-block;
+			position: relative;
+			margin-right: 5px;
+
+			.filter-size {
+				width: 3.125rem;
+				height: 2.5rem;
+				margin: 0;
+				border: none;
+
+				& + label {
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					z-index: 1;
+
+					@include translate3d(-50%, -50%, 0);
+				}
+
+				&:checked {
+					background-color: $theme-color;
+					color: $white;
+
+					& + label {
+						color: $white;
+					}
+
+					&::after {
+						display: none;
+					}
+				}				
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Reviews
+-----------------------------------------------------------------*/
+
+#reviews {
+	#comments {
+		.reviews-title {
+			font-size: 1.125rem;
+			
+			span {
+				color: $body-color;
+				font-family: $body-font;
+				font-size: 0.875rem;
+				font-weight: 400;
+				margin-left: 0.625rem;
+			}
+		}
+
+		ul.comment-list {
+			.review {
+				margin-bottom: 1.125rem;
+
+				.comment-container {
+					display: flex;
+
+					.comment-text {
+						margin-left: 1.125rem;
+						padding-top: 0.3125rem;
+
+						.meta {
+							line-height: 1;
+							margin-bottom: 0;
+
+							.review-author {
+								color: $headings-color;
+							}
+
+							.review-date {
+								margin-left: 0.5rem;
+							}
+						}
+
+						.description {
+							p {
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+
+				.rating {
+					.star-rating {
+						i {
+							color: $yellow;
+							font-size: 0.75rem;
+						}
+					}
+
+					.rating-text {
+						color: $headings-color;
+						font-size: 0.75rem;
+					}
+				}
+			}
+		}
+	}
+
+	#review_form {
+		margin-top: 2.25rem;
+		padding: 1.875rem 0;
+
+		@include border-radius(0.5rem);
+
+		.comment-respond {
+			.comment-form {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Shop Table
+-----------------------------------------------------------------*/
+
+.shop-table {
+	td, th {			
+		padding: 1rem;
+	}
+
+	thead {
+		tr {
+			th {
+				border: none;
+				font-weight: 600;
+				font-size: 0.75rem;
+				line-height: 1;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	tbody {
+		tr {
+			td {
+				border-bottom-width: 5px;
+				border-color: transparent;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	& > :not(:last-child) > :last-child > * {
+		border-bottom-color: transparent;
+	}
+
+	& > :not(caption) > * > * {
+		border-bottom-width: 0;
+	}
+}

@@ -1,0 +1,701 @@
+<!doctype html>
+<html dir="ltr" lang="en-US">
+<head>
+	<!-- Meat Tags
+	============================================= -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="JohnPiao" />
+
+	<!-- Fonts
+	============================================= -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<!-- Fontawesome
+	============================================= -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" type="text/css" />
+
+	<!-- Slick
+	============================================= -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Demo7 | Wordtrap</title>
+</head>
+<body id="demo7">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="transparent-header">
+
+			<div class="header-content">
+				<div class="navbar navbar-expand-xl navbar-dark">
+
+					<div class="container-fluid px-0">
+
+						<!-- Logo
+						============================================= -->
+						<a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
+							<img src="images/logo.png" alt="Wordtrap Logo">
+						</a>
+						
+						<!-- Navbar Toggler
+						============================================= -->
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						
+						<!-- Navbar Collapse
+						============================================= -->
+						<div id="navbarCollapse" class="collapse navbar-collapse justify-content-between">
+
+							<!-- Primary Navigation
+							============================================= -->
+							<ul id="primary-menu" class="navbar-nav mx-auto">
+								<li class="nav-item">
+									<a href="index.html" class="nav-link">Home</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">eCommerce</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item">
+											<a href="shop.html" class="nav-link">Shop</a>
+										</li>
+										<li class="nav-item">
+											<a href="product.html" class="nav-link">Single Product</a>
+										</li>
+										<li class="nav-item">
+											<a href="cart.html" class="nav-link">Cart</a>
+										</li>
+										<li class="nav-item">
+											<a href="checkout.html" class="nav-link">Checkout</a>
+										</li>
+										<li class="nav-item">
+											<a href="wishlist.html" class="nav-link">My Wishlist</a>
+										</li>
+									</ul>
+								</li>
+								<li class="current nav-item dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+									<ul class="dropdown-menu">
+										<li class="current nav-item">
+											<a href="about.html" class="nav-link">About</a>
+										</li>
+										<li class="nav-item">
+											<a href="faqs.html" class="nav-link">FAQs</a>
+										</li>
+										<li class="nav-item">
+											<a href="team.html" class="nav-link">Meet the team</a>
+										</li>
+										<li class="nav-item">
+											<a href="member.html" class="nav-link">Team Member</a>
+										</li>
+										<li class="nav-item">
+											<a href="404.html" class="nav-link">404</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a href="contact.html" class="nav-link">Contact Us</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item">
+											<a href="blog.html" class="nav-link">Archive</a>
+										</li>
+										<li class="nav-item">
+											<a href="single-post.html" class="nav-link">Single Post</a>
+										</li>
+									</ul>
+								</li>
+							</ul><!-- #primary-menu -->
+
+							<!-- Top Buttons
+							============================================= -->
+							<ul id="top-btns" class="navbar-nav flex-row">
+								<li class="nav-item">
+									<a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link"><i class="fas fa-user-alt"></i></a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">
+										<span data-cart-items="2">
+											<i class="fas fa-shopping-cart"></i>
+										</span>
+									</a>
+								</li>
+							</ul><!-- #top-btns -->
+
+						</div><!-- #navbarCollapse -->
+
+					</div>
+
+				</div>
+			</div>
+
+		</header><!-- #header -->
+
+		<!-- Content
+		============================================= -->
+		<main id="content">
+
+			<div class="page-content">
+
+				<!-- Banner
+				============================================= -->
+				<section id="about-banner" class="banner page-banner">
+
+					<div class="container-fluid">
+
+						<div class="row">
+							<div class="col-lg-10 offset-lg-1">
+								<div id="page-title">
+									<h1 class="title">Who We Are</h1>
+									<span>Lorem Ipsum is simply dummy text of the printing </span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</section><!-- #banner -->
+				
+				<!-- About Us
+				============================================= -->
+				<div id="aboutus" class="section">
+
+					<div class="container-fluid">
+
+						<div class="row">
+							<div class="col-lg-10 offset-lg-1">
+								<div class="heading-block">
+									<h3 class="title">About Us</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-4 offset-lg-1">
+								<p style="margin-bottom: 5rem;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<img src="images/about/about1.png" class="img-fluid order-first order-lg-last" alt="About Image">
+							</div>
+							<div class="col-lg-5 offset-lg-1">
+								<img src="images/about/about2.png" class="img-fluid" alt="About Image" style="margin-bottom: 5rem;">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- About Us -->
+
+				<!-- Our History
+				============================================= -->
+				<div id="history" class="section timeline">
+
+					<div class="container-fluid">
+
+						<div class="row">
+							<div class="col">
+								<div class="events-wrapper">
+									<div class="events" id="events">
+										<div class="event">
+											<div class="event-thumbnail">
+												<img src="images/about/history1.png" alt="Event Image" class="img-fluid">
+											</div>
+											<div class="event-detail">
+												<h2 class="event-date">2017</h2>
+												<span>LoreLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+											</div>
+										</div>
+										<div class="event">
+											<div class="event-thumbnail">
+												<img src="images/about/history2.png" alt="Event Image" class="img-fluid">
+											</div>
+											<div class="event-detail">
+												<h2 class="event-date">2018</h2>
+												<span>LoreLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+											</div>
+										</div>
+										<div class="event">
+											<div class="event-thumbnail">
+												<img src="images/about/history3.png" alt="Event Image" class="img-fluid">
+											</div>
+											<div class="event-detail">
+												<h2 class="event-date">2019</h2>
+												<span>LoreLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+											</div>
+										</div>
+										<div class="event">
+											<div class="event-thumbnail">
+												<img src="images/about/history1.png" alt="Event Image" class="img-fluid">
+											</div>
+											<div class="event-detail">
+												<h2 class="event-date">2020</h2>
+												<span>LoreLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+											</div>
+										</div>
+										<div class="event">
+											<div class="event-thumbnail">
+												<img src="images/about/history2.png" alt="Event Image" class="img-fluid">
+											</div>
+											<div class="event-detail">
+												<h2 class="event-date">2021</h2>
+												<span>LoreLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- Our History -->
+
+				<!-- New Products
+				============================================= -->
+				<div id="new-products" class="section">
+
+					<div class="container-fluid">
+
+						<div class="heading-block text-center">
+							<h3 class="title">New Products</h3>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<div class="products">
+									<div class="product">
+										<div class="product-image">
+											<a href="#"><img src="images/shop/product8_1.png" alt="Product Image" class="img-full"></a>
+											<a href="#"><img src="images/shop/product8_2.png" alt="Product Image" class="img-full"></a>
+											<div class="product-btns">
+												<a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+												<a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
+											</div>
+										</div>
+										<div class="product-details">
+											<div class="d-flex align-items-center justify-content-between">
+												<div class="product-rating">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+												<div class="product-price">$149</div>
+											</div>
+											<h3 class="product-title"><a href="#">Dress</a></h3>
+										</div>
+									</div>
+									<div class="product">
+										<div class="product-image">
+											<a href="#"><img src="images/shop/product9_1.png" alt="Product Image" class="img-full"></a>
+											<a href="#"><img src="images/shop/product9_2.png" alt="Product Image" class="img-full"></a>
+											<div class="product-btns">
+												<a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+												<a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
+											</div>
+										</div>
+										<div class="product-details">
+											<div class="d-flex align-items-center justify-content-between">
+												<div class="product-rating">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+												<div class="product-price">$149</div>
+											</div>
+											<h3 class="product-title"><a href="#">Dress</a></h3>
+										</div>
+									</div>
+									<div class="product">
+										<div class="product-image">
+											<a href="#"><img src="images/shop/product10_1.png" alt="Product Image" class="img-full"></a>
+											<a href="#"><img src="images/shop/product10_2.png" alt="Product Image" class="img-full"></a>
+											<div class="product-btns">
+												<a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+												<a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
+											</div>
+										</div>
+										<div class="product-details">
+											<div class="d-flex align-items-center justify-content-between">
+												<div class="product-rating">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+												<div class="product-price">$149</div>
+											</div>
+											<h3 class="product-title"><a href="#">Dress</a></h3>
+										</div>
+									</div>
+									<div class="product">
+										<div class="product-image">
+											<a href="#"><img src="images/shop/product11_1.png" alt="Product Image" class="img-full"></a>
+											<a href="#"><img src="images/shop/product11_2.png" alt="Product Image" class="img-full"></a>
+											<div class="product-btns">
+												<a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+												<a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
+											</div>
+										</div>
+										<div class="product-details">
+											<div class="d-flex align-items-center justify-content-between">
+												<div class="product-rating">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+												<div class="product-price">$149</div>
+											</div>
+											<h3 class="product-title"><a href="#">Dress</a></h3>
+										</div>
+									</div>
+									<div class="product">
+										<div class="product-image">
+											<a href="#"><img src="images/shop/product12_1.png" alt="Product Image" class="img-full"></a>
+											<a href="#"><img src="images/shop/product12_2.png" alt="Product Image" class="img-full"></a>
+											<div class="product-btns">
+												<a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+												<a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
+											</div>
+										</div>
+										<div class="product-details">
+											<div class="d-flex align-items-center justify-content-between">
+												<div class="product-rating">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+												<div class="product-price">$149</div>
+											</div>
+											<h3 class="product-title"><a href="#">Dress</a></h3>
+										</div>
+									</div>
+									<div class="product">
+										<div class="product-image">
+											<a href="#"><img src="images/shop/product13_1.png" alt="Product Image" class="img-full"></a>
+											<a href="#"><img src="images/shop/product13_2.png" alt="Product Image" class="img-full"></a>
+											<div class="product-btns">
+												<a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+												<a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
+											</div>
+										</div>
+										<div class="product-details">
+											<div class="d-flex align-items-center justify-content-between">
+												<div class="product-rating">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+												<div class="product-price">$149</div>
+											</div>
+											<h3 class="product-title"><a href="#">Dress</a></h3>
+										</div>
+									</div>
+									<div class="product">
+										<div class="product-image">
+											<a href="#"><img src="images/shop/product10_1.png" alt="Product Image" class="img-full"></a>
+											<a href="#"><img src="images/shop/product10_2.png" alt="Product Image" class="img-full"></a>
+											<div class="product-btns">
+												<a href="#" class="add-to-wishlist"><i class="far fa-heart"></i></a>
+												<a href="#" class="add-to-cart"><i class="fas fa-cart-plus"></i></a>
+											</div>
+										</div>
+										<div class="product-details">
+											<div class="d-flex align-items-center justify-content-between">
+												<div class="product-rating">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</div>
+												<div class="product-price">$149</div>
+											</div>
+											<h3 class="product-title"><a href="#">Dress</a></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- New Products -->
+
+			</div>
+
+		</main><!-- #content -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer">
+
+			<!-- Footer Main
+			============================================= -->
+			<div id="footer-main">
+
+				<div class="container-fluid">
+
+					<div class="row">
+						<div class="col-md-6 col-xxl-4">
+							<div class="row">
+								<div class="col-6">
+									<div class="widget widget-custom-html">
+										<div class="widget-content">
+											<p class="mb-2 text-white h4 body-font fw-semi-bold">New York</p>
+											<p class="mb-0">5686 Edverano Center</p>
+										</div>
+									</div>
+									<div class="widget widget-social mb-5">
+										<div class="widget-content">
+											<ul class="social-icons d-flex align-items-center">
+												<li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+												<li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+												<li><a href="#" target="_blank" title="Linkedin"><i class="fab fa-instagram"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="widget widget-custom-html">
+										<div class="widget-content">
+											<a href="callto:1234567890" class="mb-2 text-white h4 body-font fw-semi-bold">123-456-7890</a>
+											<a href="mailto:info@gmail.com">info@gmail.com</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<div class="widget widget-links mb-4">
+										<h4 class="widget-title text-white text-uppercase body-font fw-semi-bold">CUSTOMER SERVICE</h4>
+										<div class="widget-content d-flex">
+											<ul>
+												<li><a href="#">Help & FAQs</a></li>
+												<li><a href="#">Order Tracking</a></li>
+												<li><a href="#">Shipping & Delivery</a></li>
+												<li><a href="#">Orders History</a></li>
+												<li><a href="#">Advanced Search</a></li>
+											</ul>
+											<ul>
+												<li><a href="#">My Account</a></li>
+												<li><a href="#">Careers</a></li>
+												<li><a href="#">About Us</a></li>
+												<li><a href="#">Corporate Sales</a></li>
+												<li><a href="#">Privacy</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-xxl-3">
+							<div class="widget widget-subscribe pb-xxl-5">
+								<div class="widget-content">
+									<form id="widget-subscribe-form" action="#" method="post">
+										<div class="input-group">
+											<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Email">
+											<div class="input-group-append">
+												<button class="btn btn-primary text-uppercase" type="submit">Subscribe</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="widget widget-custom-html pt-3">
+								<h4 class="widget-title text-white text-uppercase body-font fw-semi-bold">Subscribe to our the free newslettr</h4>
+								<div class="widget-content">
+									<p>Get all the latest information on Events, Sales and Offers. Sign up for newsletter today.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+							<div class="widget widget-payment mt-3">
+								<div class="widget-content">
+									<div class="payments">
+										<span class="payment-icon visa"></span>
+										<span class="payment-icon paypal"></span>
+										<span class="payment-icon mastercard"></span>
+										<span class="payment-icon express"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 col-xxl-5">
+							<div class="widget widget-products pt-5 pt-xxl-0">
+								<div class="widget-content">
+									<div class="row g-0">
+										<div class="col-sm-6 col-lg-4 col-xxl-6">
+											<div class="product">
+												<div class="product-image">
+													<a href="#"><img src="images/shop/product1_1.png" alt="Product Image" class="img-full"></a>
+												</div>
+												<div class="product-details">
+													<div class="product-price">$149</div>
+													<div class="product-rating">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+													</div>
+													<h3 class="product-title mb-0"><a href="#">Dress lace up 2021 summer women</a></h3>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-lg-4 col-xxl-6">
+											<div class="product">
+												<div class="product-image">
+													<a href="#"><img src="images/shop/product2_1.png" alt="Product Image" class="img-full"></a>
+												</div>
+												<div class="product-details">
+													<div class="product-price">$149</div>
+													<div class="product-rating">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+													</div>
+													<h3 class="product-title mb-0"><a href="#">Dress lace up 2021 summer women</a></h3>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-lg-4 col-xxl-6">
+											<div class="product">
+												<div class="product-image">
+													<a href="#"><img src="images/shop/product3_1.png" alt="Product Image" class="img-full"></a>
+												</div>
+												<div class="product-details">
+													<div class="product-price">$149</div>
+													<div class="product-rating">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+													</div>
+													<h3 class="product-title mb-0"><a href="#">Dress lace up 2021 summer women</a></h3>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-lg-4 col-xxl-6">
+											<div class="product">
+												<div class="product-image">
+													<a href="#"><img src="images/shop/product4_1.png" alt="Product Image" class="img-full"></a>
+												</div>
+												<div class="product-details">
+													<div class="product-price">$149</div>
+													<div class="product-rating">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+													</div>
+													<h3 class="product-title mb-0"><a href="#">Dress lace up 2021 summer women</a></h3>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-lg-4 col-xxl-6">
+											<div class="product">
+												<div class="product-image">
+													<a href="#"><img src="images/shop/product5_1.png" alt="Product Image" class="img-full"></a>
+												</div>
+												<div class="product-details">
+													<div class="product-price">$149</div>
+													<div class="product-rating">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+													</div>
+													<h3 class="product-title mb-0"><a href="#">Dress lace up 2021 summer women</a></h3>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-lg-4 col-xxl-6">
+											<div class="product">
+												<div class="product-image">
+													<a href="#"><img src="images/shop/product6_1.png" alt="Product Image" class="img-full"></a>
+												</div>
+												<div class="product-details">
+													<div class="product-price">$149</div>
+													<div class="product-rating">
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+														<i class="fas fa-star"></i>
+													</div>
+													<h3 class="product-title mb-0"><a href="#">Dress lace up 2021 summer women</a></h3>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div id="copyrights" class="py-3 text-center text-lg-start">&copy; Copyrights 2021. All Rights Reserved.</div>
+						</div>
+					</div>
+					
+				</div>
+
+			</div><!-- #footer-main -->
+
+		</footer><!-- #footer -->
+
+	</div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+	<!-- Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	
+	<!-- Slick JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- Theme JS -->
+	<script src="js/main.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	
+</body>
+</html>
